@@ -101,9 +101,15 @@ function encriptarTexto(txAEncriptar) {
 function borrarElementosContenedor() {
     let imagen = document.querySelector(".contenedor-imagen");
     let informacion = document.querySelector(".contenedor-informacion");
+    let textoEncriptadoDesencriptado = document.querySelector(".texto-encriptado");
+    let botonCopiar = document.querySelector(".boton-copiar");
     if (imagen && informacion) {
         imagen.remove();
         informacion.remove();
+    }
+    if (textoEncriptadoDesencriptado && botonCopiar){
+        textoEncriptadoDesencriptado.remove()
+        botonCopiar.remove()
     }
 
 
@@ -137,6 +143,10 @@ function crearNuevosElementosParaContenedor(txtencriptado) {
 function procesoDeDesencriptacion() {
     textoADesencriptar = tomarTexto();
     let textoDesencriptado = desencriptarTexto(textoADesencriptar);
+    if (textoDesencriptado) {
+        borrarElementosContenedor();
+        crearNuevosElementosParaContenedor(textoDesencriptado);
+    }
     document.querySelector(".texto-encriptado").textContent = textoDesencriptado;
 }
 
