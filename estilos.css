@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(229, 229, 229);
+    
+
+}
+
+header {
+    background-color: rgb(195, 214, 222);
+    padding: 10px;
+    width: 100%;
+
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contenedor-textoybotones {
+    width: 60%;
+    margin: 10px;
+}
+
+.contenedor-palabrasencriptadas {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    border-radius: 25px;
+    background-color: white;
+    height: 650px;
+    padding: 70px;
+    -webkit-box-shadow: 3px 13px 7px -6px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 3px 13px 7px -6px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 13px 7px -6px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor-texto {
+
+    height: auto;
+
+
+}
+
+.contenedor-advetencia {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+
+}
+
+.contenedor-advetencia img {
+    margin-right: 3px;
+}
+
+.contenedor-texto textarea {
+    height: 300px;
+    width: 100%;
+    resize: none;
+    padding-left: 10px;
+    padding-top: 3px;
+    ;
+
+}
+
+.contenedor-botones {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.boton {
+    height: 35px;
+    background-color: lightblue;
+    border-radius: 15px;
+    width: 230px;
+    padding: 5px;
+    border: 1px solid rgb(31, 31, 161);
+}
+
+#boton-encriptar {
+    margin-right: 10px;
+    color: white;
+    background-color: rgb(31, 31, 161);
+}
+#boton-encriptar:active{
+    color: gold;
+    border: 1px solid gold;
+}
+
+#boton-desencriptar {
+    color: rgb(31, 31, 161);
+    background-color: rgb(216, 223, 232);
+
+}
+#boton-desencriptar:hover{
+    color: gold;
+   background-color: brown;
+}
+
+.contenedor-imagen {
+
+    padding: 10px;
+}
+
+.contenedor-informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.contenedor-informacion h3 {
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.contenedor-informacion p {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+footer {
+    background-color: rgb(195, 214, 222);
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.texto-encriptado{
+    height: 90%;
+    
+}
+
+.boton-copiar{
+    font-size: 20px;
+    border: none;
+    background-color: rgb(2, 155, 104);
+    color: white;
+    border-radius: 20px;
+    width: 150px;
+    padding: 10px;
+}
+.boton-copiar:hover{
+    cursor: pointer;
+}
+
+.contenedor-texto textarea{
+    font-size: 18px;
+}
+
+.texto-encriptado{
+    font-size: 20px;
+}
+
+
+/* Estilos para tablets */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .contenedor-textoybotones,
+    .contenedor-palabrasencriptadas {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .contenedor-textoybotones {
+        margin-bottom: 20px;
+    }
+
+    .contenedor-palabrasencriptadas {
+        height: auto;
+        padding: 20px;
+    }
+
+    .contenedor-texto textarea {
+        height: 200px;
+    }
+}
+
+/* Estilos para celulares */
+@media (max-width: 480px) {
+    header {
+        text-align: center;
+    }
+
+    .contenedor-textoybotones,
+    .contenedor-palabrasencriptadas {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .contenedor-texto textarea {
+        height: 150px;
+    }
+
+    .contenedor-palabrasencriptadas {
+        padding: 10px;
+    }
+
+    .boton {
+        width: 150px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .contenedor-imagen img {
+        width: 80%;
+    }
+
+    .contenedor-informacion h3 {
+        font-size: 20px;
+    }
+
+    .contenedor-informacion p {
+        font-size: 16px;
+    }
+}
